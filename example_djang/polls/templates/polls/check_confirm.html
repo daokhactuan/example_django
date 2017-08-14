@@ -1,0 +1,12 @@
+<html>
+<body>
+<h1> This site for Confirm </h1>
+<form action="http://192.168.1.102:8000/polls/deploy/" method="post">
+{% csrf_token %}
+<label>Duong link can tai</label>
+<input type='textbox' value="{{ path_file }}" name="path_file"></input>
+<input type="Submit" value="Deploy"></input>
+</form>
+<input type="button" value="Go back!" onclick="history.back()"></input>
+</body>
+</html>
